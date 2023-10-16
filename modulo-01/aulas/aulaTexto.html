@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-brr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+</head>
+<body>
+
+    <h1>Principais Formatações</h1>
+
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> utilizando a tag <code>&lt;b&gt;</code> (não semântica)</p>
+    <p>Nesta frase temos um <strong>termo em destaque</strong> utilizando a tag strong (semântica)</p>
+
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase temos um  <i>termo em itálico</i> utilizando a tag <code>&lt;i&gt;</code> (não semântica)</p>
+    <p>Nesta frase temos um <em>termo em ênfase</em> utilizando a tag em (semântica)</p>
+
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar também texto marcado com a <mark>tag mark</mark></p>
+
+    <h2>Texto Grande e Texto Pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> com a tag big (que não deve ser utilizada pois está obsoleta) e um <small>texto pequeno</small> com a tag small (que não está obsoleta) neste parágrafo</p>
+
+    <h2>Texto Deletado</h2>
+    <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado. Fazemos isso com a tag <code>&lt;del&gt;</code></p>
+
+    <h2>Texto Inserido</h2>
+    <p>Podemos marcar um <ins>texto como inserido</ins> com a tag ins (semântica) para dar uma ênfase e indicar que ele foi adicionado</p>
+    <p>Existe também o <u>sublinhado</u> com a tag <code>&lt;u&gt;</code> (não semântica)</p>
+
+    <h2>Texto Sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>2</sup>+3 com a tag sup</p>
+
+    <h2>Texto Subscrito</h2>
+    <p>Para inserir coisas tipo H<sub>2</sub>O com a tag sub</p>
+
+    <h1>Outras Formatações</h1>
+
+    <h2>Código-fonte / Pré formatação</h2>
+    <p>Para escrever comandos de programação podemor utilizar a tag <code>&lt;code&gt;</code>, que deixa a fonte monoespaçada. Exemplo:</p>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p>
+
+    <p>Entretando, apesar da tag code servir para demonstrar códigos é importante lembrar que ela não leva em consideração quebras de linhas, para isso podemos utilizar a tag <code>&lt;pre&gt;</code>. Exemplo:</p>
+    <pre>
+        <code>
+        int main(){
+            int num1, num2;
+            
+            printf("Digite dois números inteiros: ");
+            scanf("%d %d",&num1,&num2);
+
+            printf("Os números digitados respectivamente foram: %d %d",num1.num2);
+
+            return 0;
+        }
+        </code>
+    </pre>
+
+    <h2>Citações</h2>
+    <p>Podemos utilizar a tag q para citações simples (semântica)</p>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+
+    <p>Outra forma de fazer citações é com a tag &lt;blockquote&gt; que tem quebra de linha e deslocamento horizontal para a direita</p>
+    <blockquote>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure dolores nulla maiores ducimus corrupti, voluptas voluptatum nihil cumque voluptatibus reiciendis? Laboriosam, sit. Sed tenetur aliquam doloribus maiores, nam ipsum amet.
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> e estou adorando.</p>
+    <p>No parágrafo acima eu utilizei a tag &lt;abbr&gt; para dizer que HTML e CSS são Abreviações, por isso quando passamos o mouse por cima desses termos vamos ver um pequeno pop up dizendo qual é a palavra que a sigla está abreviando.</p>
+
+    <h2>Tetxo invertido</h2>
+    <p>Podemos também deixar um texto de forma invertida com a tag <code>&lt;bdo&gt;</code></p>
+    <p><bdo dir="rtl">Estou aprendendo a cirar coisas em HTML.</bdo></p>
+
+</body>
+</html>

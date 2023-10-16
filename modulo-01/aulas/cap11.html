@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+
+    <h1>Imagem dinâmica</h1>
+    <p>
+        Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    <p>
+        Para fazer imagens responsivas utilizamos a tag <code>&lt;picture&gt;</code> e <code>&lt;source&gt;</code>. <br>
+    </p>
+
+    <p>
+        <pre>
+            <code>
+        &lt;picture&gt;
+            &lt;source media="(max-width: 750px)" scrset="imagens/foto-p.png" type="image/png"&gt;
+            &lt;source media="(max-width: 1050px)" scrset="imagens/foto-m.png" type="image/png"&gt;    
+            &lt;img src="imagens/foto-g.png" alt="imagem responsíva"&gt;    
+        &lt;/picture&gt;
+            </code>
+        </pre>
+    </p>
+
+    <p>
+        A tag <code>&lt;source&gt;</code> possui 3 atributos:
+        <ul>
+            <li><code>type</code> - Vai indicar o media type que usamos.
+            <li><code>srcset</code> - Vai configurar o nome da imgagem que será carregada quando o tamanho da imagem for atingido.
+            <li><code>media</code> - Indica o tamanho máximo a ser considerado para carregar a imagem indicada no atributo <code>srcset</code>
+        </ul>
+    </p>
+
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+
+    <p>
+        A tag &lt;audio&gt; tem alguns atributos, são eles:
+        <ul>
+            <li><code>preload</code>
+
+                <ul>
+                    <li><code>metadeta</code> - Vai carregar apenas as informações sobre o arquivo (tamanho, tempo, informações de direitos, etc)
+                    <li><code>none</code> - Não vai carregar absolutamente nada até que o usuário clique no botão play ou um script inicie a reprodução.
+                    <li><code>auto</code> - Vai carregar o arquivo de áudio inteiro assim que a página for carregada, mesmo que o usuário nunca aperte play
+                </ul>
+
+            <li><code>controls</code> - Apresenta o player na tela. Caso não seja colocado na tag <code>&lt;audio&gt;</code> o usuário não poderá interagir com ele.
+
+            <li><code>autoplay</code> - Faz a reprodução do áudio iniciar assim que a página for carregada.
+
+            <li><code>loop</code> - Vai fazer com que o áudio seja repetido eternamente assim que terminar sua reprodução.
+
+        </ul>
+    </p>
+
+
+    <audio preload="metadata" controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <p>
+            Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique Aqui Para Baixar o Audio</a>
+        </p>
+    </audio>
+
+    <p>
+        <pre>
+            <code>
+        &lt;audio preload="metadata" controls autoplay loop&gt;
+            &lt;source src="midia/guanacast-33.mp3" type="audio/mpeg"&gt;
+            &lt;source src="midia/guanacast-33.ogg" type="audio/ogg"&gt;
+            &lt;source src="midia/guanacast-33.wav" type="audio/wav"&gt;
+
+            &lt;p&gt; 
+            Seu navegador não suporta áudio &lt;a hre="midis/guanacast-33.mp3" download="guanacast-33.mp3 type="audio/mpeg"&gt; Aperte aqui para baixar o arquivo em mp3 &lt;/a&gt;
+            &lt;/p&gt;
+        &lt;/audio&gt;
+            </code>
+        </pre>
+    </p>
+    
+    <p>
+        Adicionamos vários &lt;source&gt; com extensões de arquivos diferentes (mp3, wav e ogg), o navegador tentara rodar o arquivo no primeiro source, caso não consiga ele tentará o do segundo, caso não consiga ele tentará rodar o arquivo do 3 source e por fim, se ele ainda assim não conseguir rodar, ele vai exibir a mensagem de que o navegador não suporta os arquivos de áudio e disponibilizar o link para o download do arquivo.
+    </p>
+
+</body>
+</html>

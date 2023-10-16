@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Âncoras</title>
+</head>
+<body>
+
+    <h1>Usando Links Externos</h1>
+    <p>
+        Para criar um link utilizamos a tag <code>&lt;a href="https://site.com"&gt;Texto que ficará como Hiperlink&lt;/a&gt;</code>
+    </p>
+    <p>
+        Links externos servem para levar para sites diferentes por isso, é recomendável que quando estivermos utilizando links externos adicionarmos dois parâmetros dentro da tag de âncora: <code>&lt;a href="https://site.com" target="_blank" rel="external"&gt;Texto que ficará como Hiperlink&lt;/a&gt;</code>
+    </p>
+    <ul>
+        <li><code>href = "https://www.link.com"</code> - Cria uma referência hipertexto.
+        <ul>
+            <li><code>hreflang = "en"</code> - Informa para o navegador que o link que será aberto está em outro idioma. (o "en" que foi utilizado indica que está em inglês)
+        </ul>
+
+        <li><code>target = " "</code> - Informa para o navegador como o link deve ser aberto
+            <ul>
+                <li><code>_blank</code> - Vai abrir o link em uma nova janela em branco.
+                <li><code>_self</code> - Vai abrir o link na janela ou frame atual.
+                <li><code>_top</code> - vai desfazer todos os frames e abrir o destino no navegador completo.
+                <li><code>_parent</code> - similar ao uso do _top em uma referência à janela mãe.
+                <li><code>nome-do-frame</code> - caso esteja utilizando em frames, indicar o nome da janela a abrir.
+            </ul>
+
+        <li><code>rel = " "</code> - Indica qual é a natureza do link.
+            <ul>
+                <li>next - Indica que o link é para a próxima parte do documento atual.
+                <li>prev -  Indica que o link é para a parte anterior do doccumento atual.
+                <li>author - Indica que é um link para o site do autor do artigo atual.
+                <li>external - Indica que é um link para o outro site que não faz parte do site atual.
+                <li>nofollow - Indica que é um link para um site não endossado, como um link pago.
+            </ul>
+    </ul>
+
+
+    <p>
+        Você pode acessar este link externo <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">que abrirá em uma guia nova</a>
+    </p>
+
+    <p>
+        Ou você pode acessar este link externo <a href="https://gustavoguanabara.github.io/">que irá sobrepor este site</a>
+    </p>
+
+    <h1>Usando Links Internos</h1>
+    <p>
+        Os links internos servem para fazer uma ligação com outra página que está dentro do nosso servidor e diz respeito a nossa página. Para fazer um link com uma página interna utilizamos a tag de âncora da seguinte forma: <code>&lt;a href="https://site.com" target="_self" &gt;Texto que ficará como Hiperlink&lt;/a&gt;</code>
+    </p>
+
+    <ul>
+        <li><code>target ="_self"</code> - Indica que o link deve ser aberto na própria página
+    </ul>
+
+    <p>
+        Esta é a primeira página do site, se você quiser pode acessar a minha <a href="pag02.html" rel="next">segunda página</a>
+    </p>
+
+    <h1>Links para download</h1>
+    <p>
+        Podemos utilizar links para fazer o download de arquivos, para isso utilizamos a tag a  e os parametros download e type da seguinte forma: 
+    </p>
+    <p>
+        <code>&lt;a href="livro/meulivro.pdf" download="livro/meulivro.pdf" type="application/pdf"&gt;Livro em pdf&lt;/a&gt;</code>
+    </p>
+    <p>
+        <code>&lt;a href="livro/meulivro.zip" download="livro/meulivro.zip" type="application/zip"&gt;Livro em zip&lt;/a&gt;</code>
+    </p>
+    <ul>
+        <li><a href="livro/meulivro.pdf" download="livro/meulivro.pdf" type="application/pdf">Livro em pdf</a>
+        <li><a href="livro/meulivro.zip" download="livro/meulivro.zip" type="application/zip">Livro em zip</a>
+    </ul>
+
+</body>
+</html>

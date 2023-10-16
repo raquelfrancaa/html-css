@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body{
+            
+            font-family: 'Poppins', sans-serif;
+            /*
+            Medidas Absolutas:
+            cm, mm, px, in(polegadas), pt(ponto), pc
+
+            Medidas Relativas:
+            em(relativo ao tamanho atual da fonte), ex(relativo a altura x de uma fonte), rem, vw(viewport width), vh(viewport height), %
+
+            Para a altura de fontes é recomendado o uso somente das medidas px e em.
+
+            16px geralmente é = 1em
+
+            No lugar de utilizar
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 1em;
+            font-style: italic;
+
+            utilizamos um shorthand (mãozinha) e fazemos:
+            font-style -> font-weight -> font-size -> font-family
+            */
+
+            font: 600 1.2em sans-serif;
+        }
+
+        p{
+            font: 400 1em sans-serif;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eligendi eum molestias at facilis ea unde harum mollitia architecto porro excepturi praesentium repellat, provident hic nihil quos esse? Quibusdam, quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga quas tempore necessitatibus incidunt itaque quam modi dolore tenetur eveniet earum iste similique, corporis nesciunt sequi ex illo, aspernatur provident sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda quam ut beatae eligendi suscipit perspiciatis, provident quod obcaecati. Ipsum similique quidem aspernatur numquam perferendis eaque dolores doloremque voluptates iste!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta eveniet nihil commodi tempora officia. Necessitatibus veniam, deleniti laudantium magni perferendis corrupti molestiae modi. Sed rerum deserunt corrupti quod totam non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus fugiat similique alias repellat. Eveniet dolorum sapiente, odit reiciendis sequi labore voluptatibus tenetur placeat, deserunt, impedit quod voluptatum libero! Delectus, molestias?</p>
+
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia pariatur veniam, quis tempora saepe maiores suscipit obcaecati animi deleniti laboriosam quas, eveniet eum ad provident blanditiis est, eos voluptatem a! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet omnis repellendus voluptatum accusantium nesciunt quasi blanditiis quod minus facere incidunt, sunt iste, quos exercitationem error. Magni excepturi maiores aliquid libero.</p>
+    
+</body>
+</html>
